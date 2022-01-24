@@ -3,11 +3,8 @@ package com.example.organdonation;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -37,7 +34,7 @@ public class MyProfile extends AppCompatActivity {
         fullName=findViewById(R.id.profileName);
         email=findViewById(R.id.profileEmail);
 //        profileImage=findViewById(R.id.profileImage);
-        changeProfile=findViewById(R.id.editProfile);
+        changeProfile=findViewById(R.id.saveEdit);
         fAuth = FirebaseAuth.getInstance();
         fstore=FirebaseFirestore.getInstance();
         userId =fAuth.getCurrentUser().getUid();
@@ -67,9 +64,9 @@ public class MyProfile extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(v.getContext(),EditProfile.class);
-                i.putExtra("fullName","Hrushikesh Ubale");
-                i.putExtra("email","ubalehrushikesh18@gmail.com");
-                i.putExtra("phone","8657370013");
+                i.putExtra("fullName",fullName.getText().toString());
+                i.putExtra("email",email.getText().toString());
+                i.putExtra("phone",phone.getText().toString());
                 startActivity(i);
             }
         });
