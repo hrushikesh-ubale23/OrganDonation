@@ -94,7 +94,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 DocumentReference df = mStore.collection("Doctor").document(mAuth.getCurrentUser().getUid());
                                 Map<String,Object> doctor = new HashMap<>();
                                 doctor.put("Email", email);
-                                doctor.put("doctor Name",person);
+                                doctor.put("doctorName",person);
                                 doctor.put("Phone", phoneNo);
                                 df.set(doctor).addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override

@@ -130,6 +130,8 @@ public class DoctorHome extends AppCompatActivity implements NavigationView.OnNa
                 break;
 
             case R.id.nav_profile:
+                Intent intent2 = new Intent(DoctorHome.this,MyProfile.class);
+                startActivity(intent2);
                 break;
 
             case R.id.nav_availabledonors:

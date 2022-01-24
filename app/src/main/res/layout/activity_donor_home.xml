@@ -49,40 +49,6 @@
                     app:titleTextColor="#ffffff"
                     tools:ignore="MissingConstraints" />
 
-                <Button
-                    android:id="@+id/donor_pledge"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Take pledge"
-                    app:layout_constraintBottom_toTopOf="@+id/history"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/toolbard"
-                    app:layout_constraintVertical_bias="0.793" />
-
-                <Button
-                    android:id="@+id/history"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="48dp"
-                    android:text="View history"
-                    app:layout_constraintBottom_toTopOf="@+id/unpledge"
-                    app:layout_constraintEnd_toEndOf="@+id/donor_pledge"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="@+id/donor_pledge" />
-
-                <Button
-                    android:id="@+id/unpledge"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="216dp"
-                    android:text="Unpledge"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/history"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/history" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </ScrollView>
