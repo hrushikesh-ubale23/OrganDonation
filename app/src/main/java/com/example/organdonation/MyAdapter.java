@@ -57,6 +57,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             phone=itemView.findViewById(R.id.dnumber);
             bloodg=itemView.findViewById(R.id.bloodg);
             organ=itemView.findViewById(R.id.dorgan);
+            //button.seton
         }
     }
 }

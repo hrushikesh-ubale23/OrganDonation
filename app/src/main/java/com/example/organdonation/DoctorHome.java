@@ -100,7 +100,7 @@ public class DoctorHome extends AppCompatActivity implements NavigationView.OnNa
               }
                 for(DocumentChange dc : value.getDocumentChanges()){
 
-                    if(dc.getType()==DocumentChange.Type.ADDED && !dc.getDocument().get("BloodGroup").equals(null)){
+                    if(dc.getType()==DocumentChange.Type.ADDED ){
 
                         userArrayList.add(dc.getDocument().toObject(donor.class));
                     }
