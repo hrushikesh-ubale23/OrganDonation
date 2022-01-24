@@ -17,33 +17,34 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
-public class MyProfiled extends AppCompatActivity {
+public class MyProfilep extends AppCompatActivity {
     TextView fullName, email, phone;
     FirebaseAuth fAuth;
     Button changeProfile;
     FirebaseFirestore fstore;
     String userId;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_profiled);
-        phone = findViewById(R.id.profileNumberd);
-        fullName = findViewById(R.id.profileNamed);
-        email = findViewById(R.id.profileEmaild);
-        changeProfile = findViewById(R.id.saveEditd);
+        setContentView(R.layout.activity_my_profilep);
+        phone = findViewById(R.id.profileNumberp);
+        fullName = findViewById(R.id.profileNamep);
+        email = findViewById(R.id.profileEmailp);
+        changeProfile = findViewById(R.id.saveEditp);
         fAuth = FirebaseAuth.getInstance();
         fstore = FirebaseFirestore.getInstance();
         userId = fAuth.getCurrentUser().getUid();
         final FirebaseUser user = fAuth.getCurrentUser();
 
-        DocumentReference documentReference = fstore.collection("Donor").document(userId);
+        DocumentReference documentReference = fstore.collection("Patient").document(userId);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
                 if (value.exists()) {
                     phone.setText(value.getString("Phone"));
-                    fullName.setText(value.getString("DonorName"));
+                    fullName.setText(value.getString("PatientName"));
                     email.setText(value.getString("Email"));
                 }
             }
@@ -52,7 +53,7 @@ public class MyProfiled extends AppCompatActivity {
         changeProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(), EditProfiled.class);
+                Intent i = new Intent(v.getContext(), EditProfilep.class);
                 i.putExtra("fullName", fullName.getText().toString());
                 i.putExtra("email", email.getText().toString());
                 i.putExtra("phone", phone.getText().toString());

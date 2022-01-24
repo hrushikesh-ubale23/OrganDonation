@@ -4,7 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MyProfiled"
+        tools:context=".MyProfilep"
         android:background="@drawable/back"
         android:id="@+id/drawer_layout">
         <com.google.android.material.navigation.NavigationView
@@ -37,7 +37,7 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/profileNumberd"
+                        android:id="@+id/profileNumberp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="101dp"
@@ -48,16 +48,16 @@
                         app:layout_constraintStart_toEndOf="@+id/imageView12"
                         app:layout_constraintTop_toBottomOf="@+id/textView13" />
                     <Button
-                        android:id="@+id/saveEditd"
+                        android:id="@+id/saveEditp"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:background="@drawable/input_bg"
                         android:text="Edit Profile"
                         android:textColor="@color/white"
-                        app:layout_constraintEnd_toEndOf="@+id/profileNumberd"
-                        app:layout_constraintStart_toStartOf="@+id/profileNumberd"
-                        app:layout_constraintTop_toBottomOf="@+id/profileNumberd" />
+                        app:layout_constraintEnd_toEndOf="@+id/profileNumberp"
+                        app:layout_constraintStart_toStartOf="@+id/profileNumberp"
+                        app:layout_constraintTop_toBottomOf="@+id/profileNumberp" />
 
                     <ImageView
                         android:id="@+id/imageView10"
@@ -130,7 +130,7 @@
                         android:textSize="20sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/imageView10"
-                        app:layout_constraintTop_toBottomOf="@+id/profileNamed" />
+                        app:layout_constraintTop_toBottomOf="@+id/profileNamep" />
 
                     <TextView
                         android:id="@+id/textView13"
@@ -143,10 +143,10 @@
                         android:textSize="20sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/imageView12"
-                        app:layout_constraintTop_toBottomOf="@+id/profileEmaild" />
+                        app:layout_constraintTop_toBottomOf="@+id/profileEmailp" />
 
                     <TextView
-                        android:id="@+id/profileNamed"
+                        android:id="@+id/profileNamep"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
@@ -161,7 +161,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
                     <TextView
-                        android:id="@+id/profileEmaild"
+                        android:id="@+id/profileEmailp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="140dp"

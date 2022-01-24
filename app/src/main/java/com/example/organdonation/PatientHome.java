@@ -85,7 +85,9 @@ public class PatientHome extends AppCompatActivity implements NavigationView.OnN
                 startActivity(intent1);
                  break;
 
-            case R.id.nav_Progress:
+            case R.id.nav_profile:
+                Intent intent2 = new Intent(PatientHome.this,MyProfilep.class);
+                startActivity(intent2);
                 break;
 
             case R.id.nav_logout:

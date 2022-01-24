@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".EditProfilep"
+            android:exported="false" />
+        <activity
+            android:name=".MyProfilep"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfiled"
+            android:exported="false" />
+        <activity
             android:name=".MyProfiled"
             android:exported="false" />
         <activity

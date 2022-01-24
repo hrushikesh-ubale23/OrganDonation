@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".EditProfiled"
+        android:background="@drawable/back"
+        android:id="@+id/drawer_layout">
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/nav_view"
+            app:headerLayout="@layout/headerfile"
+            app:menu="@menu/sidemenu"
+            android:layout_gravity="start"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#88000000"/>
+
+            <ScrollView
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="-53dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/saveEditd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/input_bg"
+                        android:text="Save"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="@+id/emailEditd"
+                        app:layout_constraintStart_toStartOf="@+id/emailEditd"
+                        app:layout_constraintTop_toBottomOf="@+id/emailEditd" />
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="#8C6C0D"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                        app:title="My Profile"
+                        app:titleMargin="10dp"
+                        app:titleTextColor="#ffffff"
+                        tools:ignore="MissingConstraints" />
+
+                    <EditText
+                        android:id="@+id/nameEditd"
+                        android:layout_width="221dp"
+                        android:layout_height="46dp"
+                        android:layout_marginStart="98dp"
+                        android:layout_marginTop="144dp"
+                        android:layout_marginEnd="104dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+                    <EditText
+                        android:id="@+id/phoneEditd"
+                        android:layout_width="222dp"
+                        android:layout_height="46dp"
+                        android:layout_marginTop="49dp"
+                        android:ems="10"
+                        android:inputType="textPersonName|phone"
+                        android:text="Phone Number"
+                        app:layout_constraintEnd_toEndOf="@+id/nameEditd"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="@+id/nameEditd"
+                        app:layout_constraintTop_toBottomOf="@+id/nameEditd" />
+
+                    <EditText
+                        android:id="@+id/emailEditd"
+                        android:layout_width="223dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="49dp"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:text="Email "
+                        app:layout_constraintEnd_toEndOf="@+id/phoneEditd"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="@+id/phoneEditd"
+                        app:layout_constraintTop_toBottomOf="@+id/phoneEditd" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>

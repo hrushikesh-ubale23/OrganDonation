@@ -83,6 +83,8 @@ public class DonorHome extends AppCompatActivity implements NavigationView.OnNav
                 break;
 
             case R.id.nav_profile:
+                Intent intent1=new Intent(DonorHome.this,MyProfiled.class);
+                startActivity(intent1);
                 break;
 
             case R.id.nav_Pledge:
