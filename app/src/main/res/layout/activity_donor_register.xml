@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DonorRegister"
+        android:background="@drawable/back">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B5000000"/>
+
+        <ScrollView
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:layout_editor_absoluteX="-58dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="72dp"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Donor Register"
+                    android:textColor="@color/white"
+                    android:textSize="44sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/named"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/input_bg"
+                    android:drawableLeft="@drawable/person"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Full name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.522"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <EditText
+                    android:id="@+id/phoned"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/input_bg"
+                    android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Phone"
+                    android:inputType="textPhonetic"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/named"
+                    app:layout_constraintStart_toStartOf="@+id/named"
+                    app:layout_constraintTop_toBottomOf="@+id/named" />
+
+                <EditText
+                    android:id="@+id/inputEmaild"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/input_bg"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/phoned"
+                    app:layout_constraintStart_toStartOf="@+id/phoned"
+                    app:layout_constraintTop_toBottomOf="@+id/phoned" />
+
+                <EditText
+                    android:id="@+id/inputPasswordd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/input_bg"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/inputEmaild"
+                    app:layout_constraintStart_toStartOf="@+id/inputEmaild"
+                    app:layout_constraintTop_toBottomOf="@+id/inputEmaild" />
+
+                <EditText
+                    android:id="@+id/confirmPasswordd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/input_bg"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/inputPasswordd"
+                    app:layout_constraintStart_toStartOf="@+id/inputPasswordd"
+                    app:layout_constraintTop_toBottomOf="@+id/inputPasswordd" />
+
+                <Button
+                    android:id="@+id/takePledge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/input_bg"
+                    android:text="Signup"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/confirmPasswordd"
+                    app:layout_constraintStart_toStartOf="@+id/confirmPasswordd"
+                    app:layout_constraintTop_toBottomOf="@+id/confirmPasswordd" />
+
+                <TextView
+                    android:id="@+id/alreadyHaveAccountd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Already have an account"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/takePledge"
+                    app:layout_constraintStart_toStartOf="@+id/takePledge"
+                    app:layout_constraintTop_toBottomOf="@+id/takePledge" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

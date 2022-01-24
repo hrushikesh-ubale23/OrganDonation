@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OrganDonation</string>
+    <string name="Doctor">Doctor</string>
+    <string name="Donor">Donor</string>
+    <string name="Patient">Patient</string>
+    <string name="Welcome">Welcome</string>
+    <string name="navigation_open">Open Navigatio drawer</string>
+    <string name="navigation_close">Close Navigation drawer</string>
+</resources>

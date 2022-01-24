@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RequestForm"
+        android:background="@drawable/back"
+        android:id="@+id/drawer_layoutd">
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/nav_viewd"
+            app:headerLayout="@layout/headerfile"
+            app:menu="@menu/sidemenu"
+            android:layout_gravity="start"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#88000000"/>
+
+            <ScrollView
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="-110dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="72dp"
+                        android:fontFamily="@font/aldrich"
+                        android:text="Request Form"
+                        android:textColor="@color/white"
+                        android:textSize="44sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/adressp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="48dp"
+                        android:layout_marginEnd="24dp"
+                        android:background="@drawable/input_bg"
+                        android:drawableLeft="@drawable/location"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Adress"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="13dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    <EditText
+                        android:id="@+id/genderp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/input_bg"
+                        android:drawableLeft="@drawable/personi"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Gender"
+                        android:inputType="textPhonetic"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="13dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        app:layout_constraintEnd_toEndOf="@+id/adressp"
+                        app:layout_constraintStart_toStartOf="@+id/adressp"
+                        app:layout_constraintTop_toBottomOf="@+id/adressp" />
+
+                    <EditText
+                        android:id="@+id/dobp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/input_bg"
+                        android:drawableLeft="@drawable/calender"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Date of Birth"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="13dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        app:layout_constraintEnd_toEndOf="@+id/genderp"
+                        app:layout_constraintStart_toStartOf="@+id/genderp"
+                        app:layout_constraintTop_toBottomOf="@+id/genderp" />
+
+                    <EditText
+                        android:id="@+id/bloodp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/input_bg"
+                        android:drawableLeft="@drawable/blood"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Blood group"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="13dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        app:layout_constraintEnd_toEndOf="@+id/dobp"
+                        app:layout_constraintStart_toStartOf="@+id/dobp"
+                        app:layout_constraintTop_toBottomOf="@+id/dobp" />
+
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/input_bg"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="@+id/bloodp"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="@+id/bloodp"
+                        app:layout_constraintTop_toBottomOf="@+id/checkBoxp" />
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="#8C6C0D"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                        app:title="Organ Request Form"
+                        app:titleMargin="10dp"
+                        app:titleTextColor="#ffffff"
+                        tools:ignore="MissingConstraints" />
+
+                    <CheckBox
+                        android:id="@+id/kidneyp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kidney"
+                        app:layout_constraintStart_toStartOf="@+id/bloodp"
+                        app:layout_constraintTop_toTopOf="@+id/liverp" />
+
+                    <CheckBox
+                        android:id="@+id/liverp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="56dp"
+                        android:text="Liver"
+                        app:layout_constraintStart_toEndOf="@+id/kidneyp"
+                        app:layout_constraintTop_toBottomOf="@+id/bloodp" />
+
+                    <CheckBox
+                        android:id="@+id/heartp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Heart"
+                        app:layout_constraintEnd_toEndOf="@+id/bloodp"
+                        app:layout_constraintStart_toEndOf="@+id/liverp"
+                        app:layout_constraintTop_toTopOf="@+id/liverp" />
+
+                    <CheckBox
+                        android:id="@+id/intestinep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Intestine"
+
+                        app:layout_constraintStart_toStartOf="@+id/kidneyp"
+                        app:layout_constraintTop_toBottomOf="@+id/kidneyp" />
+
+                    <CheckBox
+                        android:id="@+id/pancreasep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="44dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Pancrease"
+                        app:layout_constraintStart_toEndOf="@+id/intestinep"
+                        app:layout_constraintTop_toBottomOf="@+id/liverp" />
+
+                    <CheckBox
+                        android:id="@+id/lungp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="12dp"
+                        android:text="Lung"
+                        app:layout_constraintEnd_toEndOf="@+id/heartp"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/pancreasep"
+                        app:layout_constraintTop_toBottomOf="@+id/heartp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxp"
+                        android:layout_width="390dp"
+                        android:layout_height="79dp"
+                        android:layout_marginTop="32dp"
+                        android:text="I hereby declare that the details filled are correct.In case any of the above information is found to be false or untrue or misleading or misrepresenting, I am
+aware that I may be held liable for it."
+                        app:layout_constraintEnd_toEndOf="@+id/lungp"
+                        app:layout_constraintHorizontal_bias="0.252"
+                        app:layout_constraintStart_toStartOf="@+id/intestinep"
+                        app:layout_constraintTop_toBottomOf="@+id/pancreasep" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>

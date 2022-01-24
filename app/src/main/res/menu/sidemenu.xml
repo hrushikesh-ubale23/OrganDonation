@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/person"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/person"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_OrganRequests"
+            android:icon="@drawable/person"
+            android:title="View Organ Requests" />
+
+        <item
+            android:id="@+id/nav_availabledonors"
+            android:icon="@drawable/person"
+            android:title="View Available donors" />
+
+        <item
+            android:id="@+id/nav_pateintRequest"
+            android:icon="@drawable/person"
+            android:title="Put Organ Request" />
+
+        <item
+            android:id="@+id/nav_Pledge"
+            android:icon="@drawable/person"
+            android:title="Pledge" />
+
+        <item
+            android:id="@+id/nav_Progress"
+            android:icon="@drawable/person"
+            android:title="Check progress of Request" />
+
+
+
+    </group>
+
+    <item android:title="Logout">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/person"
+                    android:title="Login" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/person"
+                    android:title="Logout" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+
+                android:icon="@drawable/person"
+                android:title="Share" />
+
+            <item
+
+                android:icon="@drawable/person"
+                android:title="Rate" />
+
+        </menu>
+    </item>
+
+
+</menu>
